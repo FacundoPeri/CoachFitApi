@@ -1,106 +1,68 @@
-\# 🏋️‍♂️ CoachFit
-
-
-
+# 🏋️‍♂️ CoachFit
 CoachFit es una aplicación backend en desarrollo orientada a la gestión de rutinas de entrenamiento y planes asociados, construida como proyecto de aprendizaje avanzado en \*\*arquitectura limpia y desarrollo profesional de software\*\* con .NET.
 
-
-
-\## 🎯 Objetivo del proyecto
-
-
-
+## 🎯 Objetivo del proyecto
 El objetivo principal de CoachFit es servir como proyecto formativo para:
 
-\- Diseñar una aplicación con \*\*Clean Architecture\*\*
+- Diseñar una aplicación con \*\*Clean Architecture\*\*
 
-\- Separar correctamente dominio, aplicación, infraestructura y API
+- Separar correctamente dominio, aplicación, infraestructura y API
 
-\- Implementar casos de uso testeables y desacoplados
+- Implementar casos de uso testeables y desacoplados
 
-\- Aplicar buenas prácticas reales de ingeniería de software
+- Aplicar buenas prácticas reales de ingeniería de software
 
-
-
-\## 🧱 Arquitectura
-
-
-
+## 🧱 Arquitectura
 El proyecto sigue una estructura basada en Clean Architecture:
 
+- **Domain**: entidades y reglas de negocio
 
+- **Application**: casos de uso, DTOs e interfaces
 
-\- \*\*Domain\*\*: entidades y reglas de negocio
+- **Infrastructure**: persistencia y detalles técnicos
 
-\- \*\*Application\*\*: casos de uso, DTOs e interfaces
+- **API**: capa de exposición (ASP.NET Core)
 
-\- \*\*Infrastructure\*\*: persistencia y detalles técnicos
+- **Tests**: tests unitarios de la capa Application
 
-\- \*\*API\*\*: capa de exposición (ASP.NET Core)
+## ✅ Estado actual
+- [x] Arquitectura base definida
 
-\- \*\*Tests\*\*: tests unitarios de la capa Application
+- [x] Entidad `Routine` con reglas de negocio
 
+- [x] Caso de uso `CreateRoutineUseCase`
 
+- [x] Result pattern básico
 
-\## ✅ Estado actual
+- [x] Tests unitarios con xUnit y Fake Repository
 
+## 🚧 Próximos pasos
+- Result pattern sin exceptions
 
+- Queries (lectura) separadas
 
-\- \[x] Arquitectura base definida
+- Integración con EF Core
 
-\- \[x] Entidad `Routine` con reglas de negocio
+- Autenticación y autorización (JWT)
 
-\- \[x] Caso de uso `CreateRoutineUseCase`
+- Introducción a DevOps (Docker, CI/CD)
 
-\- \[x] Result pattern básico
+## 🛠 Tecnologías
+- .NET 8
 
-\- \[x] Tests unitarios con xUnit y Fake Repository
+- ASP.NET Core
 
+- xUnit
 
+- Clean Architecture
 
-\## 🚧 Próximos pasos
-
-
-
-\- Result pattern sin exceptions
-
-\- Queries (lectura) separadas
-
-\- Integración con EF Core
-
-\- Autenticación y autorización (JWT)
-
-\- Introducción a DevOps (Docker, CI/CD)
-
-
-
-\## 🛠 Tecnologías
-
-
-
-\- .NET 8
-
-\- ASP.NET Core
-
-\- xUnit
-
-\- Clean Architecture
-
-
-
-\## 📚 Nota
-
-
-
-Este proyecto \*\*no es un producto final\*\*, sino un espacio de aprendizaje continuo orientado a fortalecer fundamentos sólidos de ingeniería de software.
-
-
-
+## 📚 Nota
+Este proyecto **no es un producto final**, sino un espacio de aprendizaje continuo orientado a fortalecer fundamentos sólidos de ingeniería de software.
 ---
 
 
 
-Desarrollado por \*\*Facundo Peri\*\*
+Desarrollado por **Facundo Peri**
 
 
 
